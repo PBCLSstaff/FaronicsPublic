@@ -6,6 +6,6 @@
     Rename-Item "$Path" "$Newfoldername"
 
     #Remove Reconnect Drives link from every user's desktop
-    Remove-Item C:\Users\*\Desktop\Reconnect*.lnk -Force
+    Remove-Item "C:\Users\*\Desktop\Reconnect Drives*" -Force
 }
 RenameFolder
