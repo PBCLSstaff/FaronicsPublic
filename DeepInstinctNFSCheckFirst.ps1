@@ -1,7 +1,8 @@
 # Define variables
 $installerUrl = "https://mylibrary.pbclibrary.org/DeepInstinct3650/InstallerManaged_deep5.0.0.11.exe"
 $exeFile = "$env:TEMP\InstallerManaged_deep5.0.0.11.exe"
-$installPath = "C:\Program Files\DeepInstinct\settings.json"
+$installPath = "C:\Program Files\DeepInstinct"
+$existPath = "C:\Program Files\DeepInstinct\settings.json"
 $commandLineArgs = "pbc.customers.deepinstinctweb.com /token 4936109d-863f-4892-ba15-df270810d945 /nfs"
 
 # Function to check if installation path exists and download installer if not
@@ -22,7 +23,7 @@ Function Check-InstallationPath {
 }
 
 # Call the function to check and potentially download the installer
-Check-InstallationPath -path $installPath -url $installerUrl -outputFile $exeFile
+Check-InstallationPath -path $existPath -url $installerUrl -outputFile $exeFile
 
 # Execute the installer with the specified command line arguments
 Write-Output "Executing the installer..."
