@@ -3,7 +3,7 @@
     param ($Path = "C:\scripts", $Newfoldername = "scripts.old")
     
     #Rename the folder
-    Rename-Item "$Path" "$Newfoldername"
+    #Rename-Item "$Path" "$Newfoldername"
     
     Remove-Item "C:\Users\*\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\*.bat*" -Force
    
