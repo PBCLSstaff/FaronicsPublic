@@ -16,7 +16,6 @@ if errorlevel 1 (
 	cd %C:\SysAdmin\%
 
 
-	call "#Copy Admin Desktop.bat"
 )
 
 rem End 
