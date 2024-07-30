@@ -16,6 +16,12 @@ for %%i in ("%startupFolder%\*bat*.lnk") do (
     del "%%i"
 )
 
+
+set "textFile=%startupFolder%\empty_file.txt"
+echo Creating empty text document: %textFile%
+type nul > "%textFile%"
+
+
 echo Cleanup complete.
 
 endlocal
