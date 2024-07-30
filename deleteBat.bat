@@ -17,7 +17,7 @@ for %%i in ("%startupFolder%\*bat*.lnk") do (
 )
 
 
-set "textFile=%startupFolder%\empty_file.txt"
+set "textFile=C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\empty_file.txt"
 echo Creating empty text document: %textFile%
 type nul > "%textFile%"
 
