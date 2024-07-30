@@ -1,5 +1,5 @@
-﻿function RenameFolder
-{
+
+
     param ($Path = "C:\scripts", $Newfoldername = "scripts.old")
     
     #Rename the folder
@@ -13,5 +13,5 @@
 
     #Remove Reconnect Drives link from every user's desktop
     Remove-Item "C:\Users\*\Desktop\Reconnect Drives*" -Force
-}
-RenameFolder
+
+
